@@ -1,16 +1,44 @@
-# React + Vite
+# Authentication & RBAC Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview  
+This frontend is a role-based web application interface built using React.  
+It allows users to register, log in, and access different dashboards based on their roles such as Admin, Recruiter, Delivery Manager, and Finance/HR.  
+The application communicates with the backend API and uses cookie-based authentication for secure access.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack & Usage  
 
-## React Compiler
+**React 18**  
+Used to build the user interface with a component-based architecture.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**React Router DOM**  
+Used for client-side routing and navigation between pages, including protected routes.
 
-## Expanding the ESLint configuration
+**Tailwind CSS**  
+Used for styling and creating responsive UI components.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Fetch API**  
+Used to communicate with backend APIs.
+
+---
+
+## Key Features  
+
+- User Signup and Login UI  
+- Cookie-based authentication  
+- Role-based dashboard redirection  
+- Protected routes based on user roles  
+- Unauthorized access redirected to 403 page  
+- Admin dashboard to manage users  
+- Simple and responsive UI  
+
+---
+
+## How to Run the Project  
+
+Clone the repository: git clone https://github.com/aswin-0404/task1-frontend.git
+
+Open the project in VS code.
+
+Run the application
