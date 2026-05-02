@@ -35,11 +35,10 @@ export default function Login() {
       }
       localStorage.setItem("role", data.role);
 
-      if (data.role === "admin") navigate("/admin");
-      else if (data.role === "recruiter") navigate("/recruiter");
+      if(data.role === "recruiter") navigate("/recruiter");
       else if (data.role === "manager") navigate("/manager");
       else if (data.role === "finance") navigate("/finance");
-      else navigate("/login");
+      else navigate("/admin");
 
     } catch (err) {
       setError("Something went wrong");
